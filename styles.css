@@ -202,6 +202,8 @@ a { color: #0F6B6B; }                /* Deep Teal */
 }
 
 /* The speaking photo fills the first screen. */
+/* Phone first: the face stays clear at the top of the shot and the
+   words sit on a dark ground at the bottom, well away from it. */
 .hero__media {
   position: absolute;
   inset: 0;
@@ -209,28 +211,28 @@ a { color: #0F6B6B; }                /* Deep Teal */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 55% 45%;
+  object-position: 70% 20%;
 }
 
-/* Deep Midnight Blue gradient so text sits on a calm ground. */
 .hero__veil {
   position: absolute;
   inset: 0;
   z-index: 1;
   background: linear-gradient(
-    105deg,
-    rgba(16, 42, 67, .96) 0%,
-    rgba(16, 42, 67, .88) 38%,
-    rgba(16, 42, 67, .60) 68%,
-    rgba(16, 42, 67, .34) 100%
+    to bottom,
+    rgba(16, 42, 67, .06) 0%,
+    rgba(16, 42, 67, .24) 36%,
+    rgba(16, 42, 67, .74) 64%,
+    rgba(16, 42, 67, .94) 84%,
+    rgba(16, 42, 67, .97) 100%
   );
 }
 
+.hero__wrap { position: relative; z-index: 2; width: 100%; }
+
 .hero__inner {
-  position: relative;
-  z-index: 2;
+  max-width: none;
   padding-block: 80px 56px;
-  max-width: 46rem;
 }
 
 .eyebrow {
@@ -256,7 +258,21 @@ a { color: #0F6B6B; }                /* Deep Teal */
 }
 
 @media (min-width: 900px) {
-  .hero__inner { padding-block: 120px 96px; }
+  /* Laptop: the photo fills the screen, the words keep to the left
+     column and the right hand side of the shot stays lit and clear. */
+  .hero__media { object-position: 6% 40%; }
+
+  .hero__veil {
+    background: linear-gradient(
+      100deg,
+      rgba(16, 42, 67, .95) 0%,
+      rgba(16, 42, 67, .88) 38%,
+      rgba(16, 42, 67, .44) 64%,
+      rgba(16, 42, 67, 0) 90%
+    );
+  }
+
+  .hero__inner { max-width: 40rem; padding-block: 120px 96px; }
   .hero__sub { font-size: 1.24rem; }
 }
 
