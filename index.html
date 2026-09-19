@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TendLine — booking and follow-up for HVAC and home-service owners</title>
+  <meta name="description" content="TendLine turns every call request into a job record, shows which quotes and appointments need chasing with the money at risk, and sends a morning digest of the jobs to chase that day.">
+  <meta name="theme-color" content="#102A43">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102A43'/%3E%3Cpath d='M9 12h14M16 12v11' stroke='%230F6B6B' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="TendLine, back to top">
+        <!-- logo.* is used on the dark header via logo-dark.* -->
+        <img class="brand__img" src="pictures/logo-dark.jpeg" width="1024" height="1024" alt="TendLine">
+        <span class="brand__word" aria-hidden="true">TendLine</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Sections">
+        <a href="#problem">The problem</a>
+        <a href="#services">What it does</a>
+        <a href="#how">How it works</a>
+        <a class="btn btn--ghost" href="https://cal.com/natasha-sen-3vjvmt/20-minute-intro-call" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== FIRST SCREEN =====================
+       Business name (header wordmark) + headline + one line + booking
+       button + the speaking photo filling the rest of the screen. -->
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero__media" src="pictures/speaking.jpeg" width="1376" height="768"
+         alt="TendLine founder presenting the Morning Digest on a laptop to an HVAC business owner in a workshop office."
+         data-drop-on-error>
+    <span class="hero__veil" aria-hidden="true"></span>
+
+    <div class="container hero__inner">
+      <p class="eyebrow">Booking and follow-up for HVAC and home-service owners</p>
+      <h1 id="hero-title">Every call you miss is a job for the next firm.</h1>
+      <p class="hero__sub">TendLine turns each enquiry into a job record, chases the quote, and hands you a short list every morning.</p>
+      <a class="btn btn--primary" href="https://cal.com/natasha-sen-3vjvmt/20-minute-intro-call" target="_blank" rel="noopener">Book a 20 minute call</a>
+    </div>
+  </section>
+
+  <!-- ===================== THE PROBLEM ===================== -->
+  <section id="problem" class="section">
+    <div class="container">
+      <p class="label">The problem, in your own words</p>
+      <h2 class="h2">The work is on the roof. The phone is on the desk.</h2>
+      <blockquote class="quote">
+        <p>HVAC owners spend the day on a roof or in a basement. Calls and website enquiries sit unanswered, quotes go cold, and they either pay a shared receptionist or lose the job to the next firm on the list.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===================== THE THREE SERVICES ===================== -->
+  <section id="services" class="section section--soft">
+    <div class="container">
+      <p class="label">What TendLine does</p>
+      <h2 class="h2">Three small pieces that <span class="accent">keep</span> the work you already earned.</h2>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="17" rx="2.5"/><path d="M9 8.5h6M9 12.5h6M9 16.5h3"/></svg>
+          </span>
+          <h3 class="card__title">Booking Enquiry to Job Record</h3>
+          <p class="card__text">A clean enquiry form that turns every call request into a job record.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="5" height="16" rx="1.6"/><rect x="10.5" y="4" width="5" height="11" rx="1.6"/><rect x="17.5" y="4" width="3" height="8" rx="1.6"/></svg>
+          </span>
+          <h3 class="card__title">HVAC Follow-Up Board</h3>
+          <p class="card__text">A board that shows which quotes and appointments need chasing with the money at risk.</p>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.5M5.6 8.3l1.8 1.8M18.4 8.3l-1.8 1.8M3 18h18"/><path d="M7.5 18a4.5 4.5 0 0 1 9 0"/></svg>
+          </span>
+          <h3 class="card__title">Morning Call-Rush Digest</h3>
+          <p class="card__text">A morning digest of the jobs to chase that day.</p>
+        </article>
+      </div>
+
+      <p class="price">
+        <span class="price__label">One price covers all three</span>
+        <span class="price__value">Rs 35,000 one time</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICE SHOT BAND =====================
+       shot6 already carries its own headline and the TendLine logo. -->
+  <section class="band" data-media aria-label="Enquiry, Quote and Booked">
+    <img src="pictures/shot6.jpeg" width="1024" height="1024"
+         alt="Three TendLine job cards reading Enquiry, Quote and Booked, laid on a desk with a filter, a phone, a notebook and a coil of copper pipe."
+         data-drop-on-error>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how" class="section">
+    <div class="container">
+      <p class="label">How it works</p>
+      <h2 class="h2">Three steps. That is the whole thing.</h2>
+
+      <ol class="steps">
+        <li>
+          <span class="steps__n" aria-hidden="true">1</span>
+          <div>
+            <h3 class="steps__title">Capture</h3>
+            <p class="steps__text">The enquiry form turns a call request into a job record.</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__n" aria-hidden="true">2</span>
+          <div>
+            <h3 class="steps__title">Chase</h3>
+            <p class="steps__text">The board shows what needs chasing and the money at risk.</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__n" aria-hidden="true">3</span>
+          <div>
+            <h3 class="steps__title">Call</h3>
+            <p class="steps__text">The morning digest lists the jobs to chase that day.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== SECOND SERVICE SHOT BAND ===================== -->
+  <section class="band" data-media aria-label="Quotes chased">
+    <img src="pictures/shot5.jpeg" width="1024" height="1024"
+         alt="A TendLine card headed Jobs Chased with a rising chart, standing above a laptop showing the Follow-up Board in a workshop."
+         data-drop-on-error>
+  </section>
+
+  <!-- ===================== WHO I AM ===================== -->
+  <section id="about" class="section section--soft">
+    <div class="container about">
+      <figure class="about__media" data-media>
+        <img src="pictures/working.jpeg" width="1792" height="2400"
+             alt="TendLine's founder at her desk with the Follow-up Board open on her laptop, a coil of copper pipe on the shelf behind her."
+             data-drop-on-error>
+      </figure>
+
+      <div class="about__body">
+        <p class="label">Who I am</p>
+
+        <div class="about__id">
+          <img class="avatar" src="pictures/profile.jpeg" width="1024" height="1024"
+               alt="Portrait of Natasha Sen, founder of TendLine."
+               data-drop-on-error>
+          <!-- Name is taken from the booking link the member supplied
+               (cal.com/natasha-sen-3vjvmt). Correct it here if needed. -->
+          <h2 class="h2 about__name">Natasha Sen</h2>
+        </div>
+
+        <p>I built TendLine after watching too many good HVAC firms lose work they had already earned — not for want of skill, but because the phone rang while they were up a ladder or under a house.</p>
+        <p>I am not a software company. I am one person who answers when you call, and I keep the chasing out of your day so you can stay on the job.</p>
+        <p>You keep the tools and the trade. TendLine keeps the follow-up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT =====================
+       No backend on this page: every contact item is a plain link.
+       Booking is first and already works.
+
+       TWO VALUES ARE STILL NEEDED. Search this file for:
+         WHATSAPP_NUMBER_GOES_HERE
+         EMAIL_GOES_HERE
+       Replace each token with the real value (WhatsApp: country code
+       and digits only, e.g. 919876543210). -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="label">Get started</p>
+      <h2 class="h2">Start with a 20 minute call.</h2>
+      <p class="lede">Tell me how your phone is handled today and you will leave the call knowing exactly what TendLine would do for your business.</p>
+
+      <div class="contact__actions">
+        <a class="btn btn--primary btn--block" href="https://cal.com/natasha-sen-3vjvmt/20-minute-intro-call" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3.5v3M16 3.5v3"/></svg>
+          </span>
+          Book a 20 minute call
+        </a>
+
+        <a class="link-card" href="https://wa.me/WHATSAPP_NUMBER_GOES_HERE?text=Hi%20TendLine%2C%20I%20run%20an%20HVAC%20business%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.5a8 8 0 0 1-11.6 7.1L4 20l1.5-4.3a8 8 0 1 1 15-4.2Z"/><path d="M9.3 9.6c.3 1.5 1.6 2.8 3.1 3.1l.9-.9a.6.6 0 0 1 .7-.1l1.2.6a.5.5 0 0 1 .2.6c-.4 1-1.4 1.4-2.4 1.2-2.4-.5-4.3-2.4-4.8-4.8-.2-1 .3-2 1.2-2.4a.5.5 0 0 1 .6.2l.6 1.2a.6.6 0 0 1-.1.7l-.9.9Z"/></svg>
+          </span>
+          <span class="link-card__label">Message me on WhatsApp</span>
+        </a>
+
+        <a class="link-card" href="mailto:EMAIL_GOES_HERE?subject=TendLine%20enquiry%20from%20my%20HVAC%20business">
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4.2 7.5 7.8 5 7.8-5"/></svg>
+          </span>
+          <span class="link-card__label">Email me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <img class="footer__logo" src="pictures/logo-dark.jpeg" width="1024" height="1024" alt="TendLine" data-drop-on-error>
+      <p class="footer__line">Booking and follow-up for HVAC and home-service owners.</p>
+      <p class="footer__small">© 2026 TendLine</p>
+    </div>
+  </footer>
+
+  <script>
+    /* Keep the page readable when a picture is missing: drop the image,
+       and if it lived in its own media block, drop that block so the
+       section closes up the space. */
+    (function () {
+      document.querySelectorAll('img[data-drop-on-error]').forEach(function (img) {
+        img.addEventListener('error', function () {
+          var holder = img.closest('[data-media]');
+          var about = holder && holder.closest('.about');
+          if (about) { about.classList.add('is-solo'); }
+          if (holder) { holder.remove(); } else { img.remove(); }
+        }, { once: true });
+      });
+
+      /* If the logo file is missing, fall back to the wordmark in the
+         headline font. */
+      var brandImg = document.querySelector('.brand__img');
+      if (brandImg) {
+        brandImg.addEventListener('error', function () {
+          var brand = brandImg.closest('.brand');
+          if (brand) { brand.classList.add('is-text'); }
+        }, { once: true });
+      }
+    })();
+  </script>
+</body>
+</html>
